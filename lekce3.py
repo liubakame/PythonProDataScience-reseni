@@ -34,7 +34,7 @@ bezci = marathon_copy.groupby("Jmeno", as_index=False).count()
 bezci.loc[bezci["Cas zavodnika"]>2, :]
 marathon_copy.loc[marathon_copy["Jmeno"]=="Vacek Martin"]
 
-# 3 zavodnici bezeli vic nez jednou v roce. Nejspis jsou to ruzne lidi se stejnym jmenem
+# 3 zavodnici bezeli vic nez jednou v roce. Nejspis jsou to ruzne lide se stejnym jmenem
 
 bezci = marathon_copy.groupby(["Jmeno", "Rok zavodu"], as_index=False).count()
 bezci.loc[bezci["Cas zavodnika"]>1, :]
